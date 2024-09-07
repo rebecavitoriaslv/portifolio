@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.projetos {
+    background-color: #191919;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+.projetos h2 {
+    color: white;
+    font-size: 75px;
+    margin-left: 270px;
+}
+
+section {
+    background-color: black;
+}
+
+.card {
+    color: white;
+    background-color: black;
+    height: 365px;
+    width: 335px;
+    border-radius: 20px;
+    padding: 20px 35px;
+    text-align: center;
+}
+
+.card .image-logo {
+    height: 80px;
+}
+
+.card img {
+    height: 100px;
+}
+
+.card h5 {
+    font-size: 25px;
+}
+
+.card p {
+    color: whitesmoke;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.card a {
+    color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+  background-color: purple;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.card a:hover {
+    background-color: transparent;
+    border: 2px solid purple;
+}
+
+.card-projetos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.display {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+@media screen and (max-width:1008px){
+    h2 {
+    display: none;
+    }
+
+    card {
+        display: block;
+    }
+}
