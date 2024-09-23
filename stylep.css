@@ -76,12 +76,33 @@ section {
     margin-top: 100px;
 }
 
-@media screen and (max-width:1008px){
-    h2 {
-    display: none;
+@media screen and (max-width: 768px) {
+    .projetos h2 {
+        font-size: 50px; /* Reduzir o tamanho da fonte do título em telas menores */
+        margin-left: auto; /* Centralizar o título */
+        margin-right: auto; 
+        text-align: center; /* Centralizar texto */
+        padding-bottom: 20px; /* Espaçamento abaixo do título */
     }
 
-    card {
-        display: block;
+    .card-projetos,
+    .display {
+        flex-direction: column; /* Empilhar os cards verticalmente */
+        align-items: center; /* Centralizar os cards horizontalmente */
+        width: 100%; /* Garantir que o contêiner ocupe toda a largura */
+        margin-left: auto; 
+        margin-right: auto; 
+        padding-left: 10px; /* Adicionar um pouco de espaço nas laterais */
+        padding-right: 10px; 
+        gap: 20px; /* Espaçamento entre os cards empilhados */
+    }
+
+    .card {
+        width: 90%; /* Ajustar a largura dos cards para ocupar mais espaço na tela menor */
+        max-width: 335px; /* Limitar a largura máxima dos cards */
+        margin-bottom: 20px; /* Margem entre os cards empilhados */
+        height: auto; /* Permitir que a altura se ajuste automaticamente */
+        padding-top: 10px; /* Ajustar o preenchimento superior se necessário */
+        padding-bottom: 10px; /* Ajustar o preenchimento inferior se necessário */
     }
 }

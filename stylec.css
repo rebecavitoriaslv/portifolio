@@ -8,14 +8,24 @@ h1 {
     font-size: 70px;
     margin-left: 170px;
 }
+
+.box-section ,
+.display-2 {
+    display: flex;
+}
+
+.display-2 {
+    margin-top: 100px;
+}
  
 section div img {
-    border-radius: 70px;
-    height: 70px;
-    width: 70px;
+    margin-left: 90px;
+    height: 50px;
     display: flex;
+    width: 70;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
 }
 
 div button {
@@ -32,3 +42,98 @@ div button {
 div button:hover {
     transition: 1s solid purple;
 }
+
+.card {
+    color: white;
+    background-color: rgb(49, 49, 49);
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px 35px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.card .image-logo {
+    height: 80px;
+}
+
+.card img {
+    height: 100px;
+}
+
+.card h5 {
+    font-size: 25px;
+}
+
+.card p {
+    color: whitesmoke;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.card a {
+    color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+  background-color: purple;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.card a:hover {
+    background-color: transparent;
+    border: 2px solid purple;
+}
+
+.card-projetos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.display {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+
+/* Estilos Responsivos */
+@media screen and (max-width: 768px) {
+    
+    h1 {
+         font-size: 40px; /* Reduzir o tamanho da fonte do título em telas menores */
+         margin-left:auto; /* Centralizar o título */
+         margin-right:auto; 
+         text-align:center; /* Centralizar texto */
+    }
+ 
+    .box-section,
+    .display-2,
+    .card-projetos,
+    .display {
+        flex-direction: column; /* Empilhar os cards verticalmente */
+        align-items: center; /* Centralizar os cards horizontalmente */
+        width: 100%; /* Garantir que o contêiner ocupe toda a largura */
+        padding-left :10px; 
+        padding-right :10px; 
+    }
+ 
+    .card {
+        width :90%; /* Ajustar a largura dos cards para ocupar mais espaço na tela menor */
+        max-width :300px; /* Limitar a largura máxima dos cards */
+        margin-bottom :20px; /* Margem entre os cards empilhados */
+        margin-left :0; /* Remover margem à esquerda em telas menores */
+    }
+ 
+    section div img {
+        margin-left :70PX; /* Remover margem à esquerda das imagens em telas menores */
+        width :50%; /* Ajustar a largura das imagens para se adaptarem melhor ao layout */
+    }
+ 
+    div button {
+        font-size :18px; /* Reduzir o tamanho da fonte dos botões em telas menores */
+    }
+ }
